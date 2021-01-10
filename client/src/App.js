@@ -13,15 +13,21 @@ function App() {
   return (
     <BrowserRouter>
     <NavBar /> 
-    <Route path="/">
+    <Route exact   path="/">
        <Home />
       </Route> 
-      <Route path="/signin">
+      <Route  path="/signin">
         <Signin />
       </Route>
-      <Route path="/login">
-        <Signin />
+      <Route path="/signup">
+        <Signup />
       </Route>
+
+      <Route path="/profile">
+        <Profile />
+      </Route>
+
+
     </BrowserRouter>
 
   );
